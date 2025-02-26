@@ -1,0 +1,314 @@
+:root {
+    --primary: #ff6b6b;
+    --primary-light: #ffcaca;
+    --dark-text: #333333;
+    --light-text: #ffffff;
+    --background: #fff9f9;
+    --card-background: #ffffff;
+    --border-color: #f0f0f0;
+    --secondary-background: #fff5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    background-color: var(--card-background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    height: 75px; /* Your desired height */
+    width: auto;
+    object-fit: contain; /* Ensures the image isn't distorted */
+}
+
+.arrivologo {
+    height: 300px; /* Your desired height */
+    width: auto;
+    object-fit: contain; /* Ensures the image isn't distorted */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-size: 1.2rem; /* Increased from 0.9rem to 1.2rem */
+}
+
+.register-btn {
+    background-color: var(--primary);
+    color: var(--light-text);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: var(--light-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.secondary-btn {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.features {
+    padding: 2rem 1.5rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-icon {
+    background-color: var(--primary-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.feature-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary);
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #666;
+    max-width: 250px;
+}
+
+.journey-section {
+    background-color: var(--secondary-background);
+    padding: 2rem 1.5rem;
+}
+
+.journey-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.journey-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.journey-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-icon {
+    background-color: var(--light-text);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.step-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary);
+}
+
+.step-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.step-content p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.cta-section {
+    background-color: var(--primary);
+    color: var(--light-text);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 15px;
+    margin: 2rem 1.5rem;
+}
+
+.cta-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .waitlist-btn {
+    background-color: var(--light-text);
+    color: var(--primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.team-section {
+    padding: 3rem 1.5rem;
+}
+
+.team-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.team-section p {
+    color: #777;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.team-member-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.team-member-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.team-member-info p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
